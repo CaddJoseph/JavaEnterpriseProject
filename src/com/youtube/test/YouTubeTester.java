@@ -18,7 +18,7 @@ public class YouTubeTester {
 		
 		YouTubeManager ym = new YouTubeManager(clientID);
 		
-		List<YouTubeVideo> videos = ym.retrieveVideos(textQuery, maxResults, filter, timeout);
+		List<YouTubeVideo> videos = ym.retrieveVideos(textQuery, maxResults, true, timeout);
 		
 		for (YouTubeVideo youtubeVideo : videos) {
 			System.out.println(youtubeVideo.getWebPlayerUrl());

@@ -48,7 +48,7 @@ public class YouTubeManager {
 	
 	private List<YouTubeVideo> convertVideos(List<VideoEntry> videos) {
 		
-		List<YouTubeVideo> youtubeVideosList = new LinkedList<YouTubeVideo>();
+		List<YouTubeVideo> youtubeVideosList = new LinkedList<>();
 		
 		for (VideoEntry videoEntry : videos) {
 			
@@ -64,13 +64,13 @@ public class YouTubeManager {
 			embeddedWebPlayerUrl = YOUTUBE_EMBEDDED_URL + embeddedWebPlayerUrl;
 			ytv.setEmbeddedWebPlayerUrl(embeddedWebPlayerUrl);
 			
-			List<String> thumbnails = new LinkedList<String>();
+			List<String> thumbnails = new LinkedList<>();
 			for (MediaThumbnail mediaThumbnail : mediaGroup.getThumbnails()) {
 				thumbnails.add(mediaThumbnail.getUrl());
 			}			
 			ytv.setThumbnails(thumbnails);
 			
-			List<YouTubeMedia> medias = new LinkedList<YouTubeMedia>();
+			List<YouTubeMedia> medias = new LinkedList<>();
 			for (YouTubeMediaContent mediaContent : mediaGroup.getYouTubeContents()) {
 				medias.add(new YouTubeMedia(mediaContent.getUrl(), mediaContent.getType()));
 			}
