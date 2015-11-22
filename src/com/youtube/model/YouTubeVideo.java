@@ -36,7 +36,8 @@ public class YouTubeVideo {
 	public void setEmbeddedWebPlayerUrl(String embeddedWebPlayerUrl) {
 		this.embeddedWebPlayerUrl = embeddedWebPlayerUrl;
 	}
-	
+
+
 	public String retrieveHttpLocation() {
 		if (medias==null || medias.isEmpty()) {
 			return null;
@@ -49,5 +50,4 @@ public class YouTubeVideo {
 		}
 		return null;
 	}
-
 }
