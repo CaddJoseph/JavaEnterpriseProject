@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.youtube.YouTubeManager;
 import com.youtube.model.YouTubeVideo;
-import com.youtube.model.YouTubeVideo;
+
 
 public class YouTubeTester {
 	
